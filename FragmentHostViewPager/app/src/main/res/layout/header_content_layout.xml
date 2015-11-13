@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="150dp"
+    android:background="@android:color/holo_green_dark">
+
+    <View
+        android:layout_width="1dp"
+        android:layout_height="1dp"
+        android:id="@+id/layout_middle"
+        android:layout_centerInParent="true"/>
+
+    <ImageView
+        android:id="@+id/header_img"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/header"
+        android:layout_marginRight="10dp"
+        android:scaleType="fitCenter"
+        android:layout_centerVertical="true"
+        android:layout_toLeftOf="@id/layout_middle"/>
+    <TextView
+        android:id="@+id/header_username"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hussain Abbasi"
+        android:textStyle="bold"
+        android:layout_marginTop="15dp"
+        android:textSize="18sp"
+        android:textAlignment="center"
+        android:textColor="@android:color/white"
+        android:layout_centerVertical="true"
+        android:layout_alignTop="@id/header_img"
+        android:layout_toRightOf="@id/layout_middle"/>
+    <TextView
+        android:id="@+id/header_subtitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="My Media"
+        android:textSize="14sp"
+        android:textAlignment="center"
+        android:textColor="@android:color/white"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@id/layout_middle"
+        android:layout_below="@id/header_username"/>
+</RelativeLayout>
