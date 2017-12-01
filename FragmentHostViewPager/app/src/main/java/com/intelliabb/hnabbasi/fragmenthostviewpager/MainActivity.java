@@ -40,7 +40,7 @@ public class MainActivity extends FragmentActivity {
         pagerAdapter = new ViewPagerAdapter(getSupportFragmentManager(), tabs);
         viewPager.setAdapter(pagerAdapter);
 
-        viewPager.setOnPageChangeListener(new ViewPager.OnPageChangeListener() {
+        viewPager.addOnPageChangeListener(new ViewPager.OnPageChangeListener() {
 
             /**
              * on swipe select the respective tab
